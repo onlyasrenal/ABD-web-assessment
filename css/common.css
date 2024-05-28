@@ -1,0 +1,253 @@
+body {
+    background-image: url(../images/bgi.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+}
+
+
+
+.shortcut {
+    /* width: 1920px; */
+    height: 52px;
+    background-color: #333;
+    display: flex;
+}
+
+.shortcut .wrapper {
+    height: 52px;
+    width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.shortcut .wrapper ul {
+    justify-content: start;
+    display: flex;
+    align-items: center;
+}
+
+.shortcut .wrapper a {
+    padding: 0 16px;
+    border-right: 1px solid #666;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.shortcut .wrapper .last {
+    border-right: none;
+}
+
+.shortcut .wrapper a span {
+    width: 11px;
+    height: 16px;
+    margin-left: 8px;
+    background-image: url(../images/sprites.png);
+    display: inline-block;
+    background-position: -160px -70px;
+    vertical-align: middle;
+}
+
+.nav {
+    /* 固定定位 */
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    background-color: #666;
+}
+
+.menus {
+    margin: 50px 0;
+    color: #fff;
+}
+
+.nav .li {
+    width: 100%;
+    letter-spacing: 2px;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 20px 0;
+    /* 动画过渡 */
+    transition: 0.3s;
+    cursor: pointer;
+    /* padding-left: 50px; */
+}
+
+.menus li:hover {
+    background-color: #d2a6c6;
+}
+
+.nav .li .fa {
+    font-size: 20px;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.nav .li ul {
+    width: 0;
+    height: 100%;
+    padding: 50px 0;
+    background-color: #a06993;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.nav .li ul li {
+    padding: 16px 24px;
+    /* 文字禁止换行 */
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.nav .li:hover ul {
+    width: 80%;
+}
+
+.nav .li ul li:hover {
+    background-color: #c28fb4;
+}
+
+.nav .li li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.nav .li .title:hover {
+    background-color: #a06993;
+}
+
+.nav .arsenal {
+    max-height: 50px;
+    margin-right: 8px;
+}
+
+.header {
+    background-color: rgba(230, 230, 230, 0.5);
+    border-radius: 10px;
+    position: relative;
+    margin: 30px auto;
+    width: 1240px;
+    display: flex;
+    justify-self: flex-start;
+    align-items: end;
+}
+
+.header .welcome {
+
+    position: absolute;
+    top: 0px;
+    left: 24%;
+    font-size: 60px;
+}
+
+.logo img {
+    width: 120px;
+    display: inline-block;
+}
+
+.header .website {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+}
+
+.header .website li {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 40px;
+    border-radius: 10px;
+}
+
+.header .website li:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.header .website a {
+    font-size: 25px;
+}
+
+.header .website li:hover {
+    background-image: linear-gradient(180deg, rgb(195, 255, 189), rgb(254, 255, 199));
+
+}
+
+.header .website li a:hover {
+    /* border-bottom: 1px solid #27ba9b; */
+    color: #27ba9b;
+}
+
+.footer {
+    height: 155px;
+    background-color: #333;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer .wrapper {
+    width: 100%;
+}
+
+.footer .bottom .link {
+    width: 40%;
+    margin: 40px auto;
+    padding-top: 20px;
+    /* width: 542px; */
+    border-top: 1px solid #999;
+}
+
+.footer .bottom .link ul {
+    width: 80%;
+    margin: auto;
+    padding-left: 35px;
+}
+
+.footer .bottom .link li {
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    display: block;
+}
+
+.footer .bottom .link a {
+    border-right: 1px solid #999;
+    padding: 0 10px;
+    color: #999;
+    font-size: 14px;
+    display: block;
+}
+
+.footer .bottom .link .last {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: none;
+}
+
+.footer button {
+    margin: 13px 42%;
+    margin-bottom: 0;
+    width: 100px;
+    height: 20px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: currentColor;
+    cursor: pointer;
+}
+
+.footer .bottom p {
+    color: #999999;
+    text-align: center;
+    font-size: 14px;
+}
