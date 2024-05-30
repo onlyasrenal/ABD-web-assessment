@@ -91,16 +91,19 @@
     margin-top: 10px;
     width: 160px;
     height: 50px;
-    font-size: 24px;
+    font-size: 22px;
     border: black solid 1px;
     border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .banner .index .index_button:hover,
 .banner .about .about_button:hover,
 .banner .quiz .quiz_button:hover {
-    background-image: linear-gradient(90deg, rgb(54, 54, 236), rgb(21, 203, 64));
+    background-color: #C9CCD0;
+    font-size: 24px;
 }
 
 .banner .quiz .quiz_button{

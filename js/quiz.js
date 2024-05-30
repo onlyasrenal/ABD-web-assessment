@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', async function () {
   let result
   let startTime
   let endTime
+  let username
   sortedData = localStorage.getItem('myData')
   console.log(sortedData)
   if (sortedData) {
@@ -14,12 +15,12 @@ document.addEventListener('DOMContentLoaded', async function () {
   else {
     result = []
   }
-  let sortedResult = []
-  let username
+
+  // 该函数初始化一个10秒的倒计时，并在页面上显示剩余时间。当倒计时结束时，更新页面内容并调用timeout()函数来进入到时后的操作。
   function startTimeCountdown() {
     const timeElement = document.getElementById('time')
     seconds = 10
-    timeElement.textContent = 'Time left: 10 s'
+    timeElement.textContent = 'Time left: 10s'
     countdown = setInterval(() => {
       seconds--
       timeElement.textContent = 'Time left: ' + seconds + 's'
@@ -30,7 +31,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       }
     }, 1000)
   }
-
+  // 超时的时候执行操作。
   function timeout() {
     console.log("Time's up!")
     const Content = document.getElementById('content')
@@ -45,12 +46,13 @@ document.addEventListener('DOMContentLoaded', async function () {
       )
       currentQuestionIndex++
       displayQuiz(data[currentQuestionIndex], currentQuestionIndex)
-    }, 3000)
+    }, 2000)
   }
+  // 异步获取JSON数据,获取题目
   const jsonUrl = './ques.json'
   try {
     const response = await fetch(jsonUrl)
-    console.log('start')
+    console.log('fetch data')
     if (!response.ok) {
       throw Error(`Error! status: ${response.status}`)
     }
@@ -58,6 +60,8 @@ document.addEventListener('DOMContentLoaded', async function () {
   } catch (error) {
     console.error('There was a problem with the fetch operation:', error)
   }
+
+  // 核心部分，显示问题和选项并通过事件监听器完成做题逻辑
   function displayQuiz(quizData, index) {
     startTimeCountdown()
     const title = document.getElementById('title')
