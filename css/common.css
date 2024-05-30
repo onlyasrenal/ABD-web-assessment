@@ -74,7 +74,6 @@ body {
     /* 动画过渡 */
     transition: 0.3s;
     cursor: pointer;
-    /* padding-left: 50px; */
 }
 
 .menus li:hover {

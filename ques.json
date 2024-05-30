@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is the capital of France?",
+    "options": [
+      "Paris",
+      "London",
+      "Berlin",
+      "Madrid"
+    ],
+    "answer": "Paris"
+  },
+  {
+    "question": "What is the largest planet in our solar system?",
+    "options": [
+      "Earth",
+      "Jupiter",
+      "Mars",
+      "Venus"
+    ],
+    "answer": "Jupiter"
+  },
+  {
+    "question": "Which year was Arsenal club founded?",
+    "options": [
+      "1914",
+      "1908",
+      "1886",
+      "1879"
+    ],
+    "answer": "1886"
+  },
+  {
+    "question": "On what continent is Buenos Aires?",
+    "options": [
+      "Asia",
+      "Europe",
+      "North America",
+      "South America"
+    ],
+    "answer": "South America"
+  },
+  {
+    "question": "Which of the following countries or regions was ruled by the Holy Roman Empire?",
+    "options": [
+      "Slovenia",
+      "Scotland",
+      "Sicily",
+      "Schleswig"
+    ],
+    "answer": "slovenia"
+  },
+  {
+    "question": "Dhaka is the capital of what country",
+    "options": [
+      "Nigeria",
+      "Bangladesh",
+      "Peru",
+      "Azerbaijan"
+    ],
+    "answer": "Bangladesh"
+  },
+  {
+    "question": "Damascus is the capital of what country?",
+    "options": [
+      "Azerbaijan",
+      "Kuwait",
+      "Yemen",
+      "Syria"
+    ],
+    "answer": "Syria"
+  },
+  {
+    "question": "Which of the following cities was ruled by Austria?",
+    "options": [
+      "Budapest",
+      "Prague",
+      "Milan",
+      "Zurich"
+    ],
+    "answer": "Budapest"
+  },
+  {
+    "question": "Which season's Premier League champions completed the feat of winning the league unbeaten",
+    "options": [
+      "98-99",
+      "03-04",
+      "11-12",
+      "18-19"
+    ],
+    "answer": "03-04"
+  },
+  {
+    "question": "In what year did the French Revolution take place",
+    "options": [
+      "1818",
+      "1820",
+      "1778",
+      "1789"
+    ],
+    "answer": "1789"
+  }
+]

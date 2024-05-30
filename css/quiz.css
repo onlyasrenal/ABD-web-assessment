@@ -23,22 +23,19 @@
   margin-top: 20px;
   width: 80%;
   height: 50px;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 10px;
-  font-size: 20px;
-}
-
-.banner #time {
-  color: red;
+  font-size: 24px;
 }
 
 .banner .question {
+  position: relative;
   margin-top: 20px;
   width: 80%;
-  height: 200px;
-  background-color: #fff;
+  height: 150px;
+  /* background-color: #fff; */
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .banner .quiz .options {
@@ -53,10 +50,10 @@
 }
 
 .banner .quiz .options button {
-  width: 140px;
-  height: 40px;
+  width: 150px;
+  height: 60px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   color: #fff;
   background-color: #007BFF;
   border: none;
@@ -68,9 +65,38 @@
 
 .banner .quiz .options button:hover {
   background-color: #0056b3;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .banner .quiz .options button:focus {
   box-shadow: 0 0 0 2px #524a4a;
+}
+
+#nameInput{
+  width: 90%;
+  height: 30px;
+  font-size: 20px;
+  text-indent: 1rem;
+}
+
+#submitButton{
+  position: absolute;
+  bottom: 25px;
+  left: 40%;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+#submitButton:hover {
+  background-color: #0056b3;
+  font-size: 22px;
 }
