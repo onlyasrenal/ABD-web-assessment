@@ -100,3 +100,37 @@
   background-color: #0056b3;
   font-size: 22px;
 }
+
+.banner .rank {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: rgba(256, 256, 256, 0.5);
+  width: 100%;
+  height: 600px;
+  box-shadow: 10px 10px 5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.banner .rank table {
+  margin: auto;
+  width: 80%;
+  height: 70%;
+  border-collapse: collapse
+}
+
+.banner .rank .title{
+  font-size: 50px;
+}
+
+.banner .rank th,
+.banner .rank td{
+  border: #000 2px solid;
+  margin: 0;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.banner .rank td:nth-child(1){
+  width: 60px;
+}
